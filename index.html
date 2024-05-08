@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Welcome to Javascript
+    </h1>
+    <div id="hello"> Hello world></div>
+    <ul>
+        <li class="green">Item 1</li>
+        <li >Item 1</li>
+        <li class="green">Item 1</li>
+        <li >Item 1</li>
+    </ul>
+    <script>
+        console.log(document.getElementById('hello'));
+        let classNameItems = document.getElementsByClassName('green')
+        console.log("Elements by className");
+        console.log(classNameItems);
+
+        let tagNameItems = document.getElementsByTagName('li');
+        console.log("Elements by TagNames");
+        console.log(tagNameItems);
+
+        console.log("Element by QuerySelector");
+        let querySelectorElement = document.querySelector('.green');
+        console.log(querySelectorElement);
+
+        console.log("Element by  ALL QuerySelector");
+        let querySelectorElements = document.querySelectorAll('.green');
+        console.log(querySelectorElements);
+
+
+        // DOM manipulation
+        console.log(document)
+        console.dir(document)
+        //console.log(document.domain)
+        console.log(document.URL)
+        console.log(document.title)
+        document.title = 'Test - DOM Manipulation' 
+        const body = document.body;
+        body.append("New text added hello")
+        const div = document.createElement('div')
+        div.append("text in div")
+      //  div.appendChild("text in div child") --> Error
+       // div.innerHTML("Inner HTML") -- > Not a function
+       // div.innerText("Inner text") --> error incorrect syntax
+       div.innerText = "Inner Text "
+        body.appendChild(div)
+
+
+    </script>
+</body>
+</html>

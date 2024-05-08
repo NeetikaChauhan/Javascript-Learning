@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hello">Click Me</button>
+    <br>
+    <br>
+    <br>
+
+    <input id="getValue" type="text">  Enter Value </input>
+
+</body>
+<script>
+    const getButton = document.querySelector("#hello");
+    getButton.addEventListener('click', ()=>{
+        alert("Helllooooooo")
+    })
+
+    const getInputValue = document.querySelector("#getValue");
+    getInputValue.addEventListener('keyup',()=> {
+        console.log("Event triggered");
+    })
+   
+</script>
+</html>
